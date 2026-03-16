@@ -1,0 +1,4 @@
+fieldset {
+  max-width: 300px;
+  width: 90%; /* Ocupa 90% da tela em dispositivos pequenos */
+}

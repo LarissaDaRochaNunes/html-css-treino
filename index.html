@@ -4,22 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <section>
-        <h1>Página inicial</h1>
-        <p>Faça seu login</p>
+        <h1>Criação de conta</h1>
     </section>
     <section>
         <form>
-            <label for="nome">Nome Completo:</label>
-            <input type="text" id="nome" name="nome" placeholder="Digite seu nome"><br>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email"> <br>
-            <label for="telefone">Número de telefone:</label>
-            <input type="number" id="telefone" name="telefone">
-            <label for="nascimento">Data de nascimento</label>
-            <input type="date" id="nascimento" name="nascimento">
+            <fieldset>
+                <legend>Informe os dados para criação de conta:</legend>
+                <label for="nome">Nome Completo:</label> <br>
+                <input type="text" id="nome" name="nome" placeholder="Informe seu nome"><br>
+                <label for="email">Email:</label> <br>
+                <input type="email" id="email" name="email" placeholder="Informe seu email"> <br>
+                <label for="celular">Celular: </label> <br>
+                <input type="tel" id="celular" name="celular" placeholder="(00)0000-0000"> <br>
+                <label for="nascimento">Data de nascimento:</label> <br>
+                <input type="date" id="nascimento" name="nascimento"> <br>
+                <label for="senha">Senha:</label> <br>
+                <input type="password" id="senha" name="senha"> <br>
+                <label for="senhac">Confirme sua senha:</label> <br>
+                <input type="password" name="senhac" id="senhac"> <br>
+                <br>
+                <a href="pagina2.html"><button onclick="alert ('Conta criada com sucesso!')">Criar conta</button></a>
+            </fieldset>
+
+
 
         </form>
     </section>
